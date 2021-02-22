@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<p>while loop</p>
+    <p>Calculating the sum of first 100 natrual numbers:</p>
+    <p id="while"></p>
+
+    <p>Creating an array using while loop:</p>
+    <p id="arr"></p>
+<body>
+    <script>
+        var i = 0, arr = [],sum=0;
+        while(i<100){
+            sum +=i;
+            arr.push(i);
+            i++;
+        }
+        document.getElementById('while').innerHTML=sum;
+        document.getElementById('arr').innerHTML=arr;
+    </script>
+
+</body>
+
+</html>
