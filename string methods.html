@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>String methods</h1>
+    <p> length of the string : Abdullah using length() method</p>
+    <p id='len'></p>
+
+    <p> length of the text ulla : Abdullah using indexOf()</p>
+    <p id='ind'></p>
+
+    <p> index of the text ull in Abdullah using lastIndexOf() method</p>
+    <p id='lind'></p>
+
+    <p> Searching a string bd in Abdullah</p>
+    <p id='se'></p>
+
+    <p> Extracting a string using slice() method from string Abdullah</p>
+    <p id='sl'></p>
+
+    <p> Replace the string Abdullah with puja using replace()</p>
+    <p id='rep'></p>
+
+    <p> Convert Abdullah to ABDULLAH using toUpperCase()</p>
+    <p id='upp'></p>
+
+    <p> concat zaber and zahin using concat()</p>
+    <p id='coc'></p>
+
+    <p>Finds the character with specific index by using charAt() methods</p>
+    <p id='pos'></p>
+
+
+
+    <script>
+
+
+        var x = "Abdullah";
+        document.getElementById('len').innerHTML = x.length;
+        document.getElementById('ind').innerHTML = x.indexOf('ulla');
+        document.getElementById('lind').innerHTML = x.lastIndexOf('ull');
+        document.getElementById('se').innerHTML = x.search('bd');
+        document.getElementById('sl').innerHTML = x.slice(2, 4);
+        document.getElementById('upp').innerHTML = x.toUpperCase();
+        var x = 'zaber', y = 'zahin';
+        var z = 'Abdullah'
+        document.getElementById('rep').innerHTML=z.replace('Abdullah','puja')
+        document.getElementById('coc').innerHTML = x.concat(y);
+        document.getElementById('pos').innerHTML = z.charAt(5);
+
+    </script>
+
+
+</body>
+
+</html>
