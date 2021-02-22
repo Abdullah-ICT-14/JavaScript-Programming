@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <p>Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive):</p>
+    <p id="ran"></p>
+
+    <p>Math.random() used with Math.floor() can be used to return random integers</p>
+    <p id="randint"></p>
+    <script>
+        document.getElementById('ran').innerHTML=Math.random();
+        document.getElementById('randint').innerHTML=Math.floor(Math.random()*10) // retruns a random integer between 0 and 10
+    </script>
+    </body>
+</html>
