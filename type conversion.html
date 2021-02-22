@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <p>typeof  operator is used to find the data type of a JavaScript variable.</p>
+    <p id='demo'></p>
+
+    <p>Converting number to string by using toString() methods.</p>
+    <p id="nts"></p>
+    <script>
+        var x=10;
+        document.getElementById("demo").innerHTML = 
+          typeof "john" + "<br>" +
+          typeof 3.14 + "<br>" +
+          typeof NaN + "<br>" +
+          typeof false + "<br>" +
+          typeof [1,2,3,4] + "<br>" +
+          typeof {name:'john', age:34} + "<br>" +
+          typeof new Date() + "<br>" +
+          typeof function () {} + "<br>" +
+          typeof myCar + "<br>" +
+          typeof null;
+
+        document.getElementById('nts').innerHTML='typeof(x.toString))'+typeof(x.toString());
+        </script>
+    </body>
+</html>
