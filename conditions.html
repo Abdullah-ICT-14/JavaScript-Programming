@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <p>Find the maximum number of 2,4,6:</p>
+    <p id="max"></p>
+
+    <p>Find the minimum number of 2,4 and 6</p>
+    <p id="min"></p>
+    <script>
+        var x = 2, y = 4, z = 6;
+        if (x > y & y > z) {
+            document.getElementById('max').innerHTML = x + '  ' + ' is greater than ' + '  ' + y + ' ' + 'and ' + z
+        } else if (y > x & y > z) {
+            document.getElementById('max').innerHTML = y + '  ' + ' is greater than ' + '  ' + x + ' ' + 'and ' + z
+
+        } else {
+            document.getElementById('max').innerHTML = z + '  ' + ' is greater than ' + '  ' + x + ' ' + 'and ' + y
+        }
+
+        if (x < y & y < z) {
+            document.getElementById('min').innerHTML = x + '  ' + ' is less than ' + '  ' + y + ' ' + 'and ' + z
+        } else if (y < x & x < z) {
+            document.getElementById('min').innerHTML = y + '  ' + ' is less than ' + '  ' + x + ' ' + 'and ' + z
+
+        } else {
+            document.getElementById('min').innerHTML = z + '  ' + ' is less than ' + '  ' + x + ' ' + 'and ' + y
+        }
+    </script>
+</body>
+
+</html>
