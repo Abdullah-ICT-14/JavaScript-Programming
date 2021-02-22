@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <p>We can perfrom mathematical function in java script by using the Math object.</p>
+    <p>Rounding a number 4.7 using Math.round()</p>
+    <p id="r"></p>
+
+    <p>Powe of 5 and 4:</p>
+    <p id='p'></p>
+
+    <p>Finding the root of a number 5 using Math.sqrt()</p>
+    <p id='sq'></p>
+
+    <p>Find the sin value of 90  using Math.sin()</p>
+    <p id='sin'></p>
+
+    <p>Finding the maximum of these number(1,90,2,5,100) using Math.max</p>
+    <p id="max"></p>
+
+    <script>
+        document.getElementById('r').innerHTML=Math.round(4.7);
+        document.getElementById('p').innerHTML=Math.pow(5,4);
+        document.getElementById('sq').innerHTML=Math.sqrt(4.7);
+        document.getElementById('sin').innerHTML=Math.sin(4.7);
+        document.getElementById('max').innerHTML=Math.max(1,90,2,5,100);
+
+    </script>
+</body>
+
+</html>
