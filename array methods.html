@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <p> Converting an array to string:</p>
+    <p id="ats"></p>
+
+    <p>Join() method:</p>
+    <p id="join"></p>
+
+    <p>Removes the array elements using pop():</p>
+    <p id='pop'></p>
+
+    <p>Inserting elements using push() method:</p>
+    <p id='push'></p>
+    <p id="new"></p>
+    <p>Shifting a array elements</p>
+    <p id='shift'></p>
+
+    <p>Deleting a array element:</p>
+    <p id="del"></p>
+
+
+    <script>
+        var cars = ['BMW', 'Toyota', 'Honda']
+
+        document.getElementById('ats').innerHTML = 'cars.toString' + cars.toString() + '<br>' + typeof (cars.toString())
+        var arr = new Array('A', 'B', 'C', 'D', 'E')
+        document.getElementById('join').innerHTML = 'arr.join(): ' + arr.join(' * ')
+        document.getElementById('pop').innerHTML = arr.pop()
+        document.getElementById('push').innerHTML = arr.push('F');
+        document.getElementById('new').innerHTML = arr
+        document.getElementById('shift').innerHTML=arr.shift()
+        doNotTrack.getElementById('del').innerHTML=delete arr[0];
+        document.getElementById('new').innerHTML = arr
+    </script>
+</body>
+
+</html>
