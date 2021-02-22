@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1>JavaScript numbers methods</h1>
+    <p>toString() method:</p>
+    <p id='demo'></p>
+
+    <p>toExponential():</p>
+    <p id='toexp'></p>
+
+    <p>The toFixed() Method:</p>
+    <p id='fix'></p>
+
+    <p>The toPrecision() Method:</p>
+    <p id='topre'></p>
+    
+    <p>The valueOf() Method:</p>
+    <p id="valof"></p>
+
+    <script>
+    var x=123.2453;
+    var y = x.toString()
+        document.getElementById('demo').innerHTML= 'x is:'+' '+ ' '+ x +' '+'Type of x is:'+' '+ typeof(x) +' '+ 'Y is :'+' '+y+' '+'Type of y is:'+ typeof(y);
+    document.getElementById('toexp').innerHTML='x.toExponential(3): '+x.toExponential(3);
+    document.getElementById('fix').innerHTML='x.toFixed(2): '+x.toFixed(2);
+    document.getElementById('topre').innerHTML='x.toPrecision(2): '+x.toPrecision(2)
+        document.getElementById('valof').innerHTML='x.valueOf(): '+x.valueOf()
+
+    </script>
+    
+    
+    </body>
+</html>
