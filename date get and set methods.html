@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <p>Find the time using getTime():</p>
+    <p id="t"></p>
+    <p>Find the year using getFullYear():</p>
+    <p id="y"></p>
+    <p>Find the day using getDay():</p>
+    <p id="d"></p>
+    <p>Find the hour using getHours():</p>
+    <p id="h"></p>
+    <p>Find the month using getMonth():</p>
+    <p id="m"></p>
+
+    <p>Set year using setFullYear()</p>
+    <p id="sy"></p>
+    <script>
+        var d =new Date()
+        document.getElementById('t').innerHTML=d.getTime();
+        document.getElementById('y').innerHTML=d.getFullYear();
+        document.getElementById('d').innerHTML=d.getDay();
+        document.getElementById('h').innerHTML=d.getHours();
+        document.getElementById('m').innerHTML=d.getMonth();
+        d.setFullYear(2020)
+        document.getElementById('sy').innerHTML=d;
+
+    </script>
+    </body>
+</html>
