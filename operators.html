@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <p>Adding 5 and 6</p>
+    <p id='add'></p>
+
+    <p>Subtraction of 5 and 6</p>
+    <p id='sub'></p>
+
+    <p>Division of 5 and 6</p>
+    <p id='div'></p>
+
+    <p>Exponent of 5 and 6</p>
+    <p id='exp'></p>
+    <script>
+
+      var x,y,z
+       x=5;
+       y=6;
+       z=x+y;
+       var w=x-y;
+       var p=x/y;
+       var q=x**y;  
+       document.getElementById('add').innerHTML=z;
+       document.getElementById('sub').innerHTML=w;
+       document.getElementById('div').innerHTML=p;
+       document.getElementById('exp').innerHTML=q;
+    </script>
+
+
+</body>
+
+</html>
