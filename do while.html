@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <p>do while loop</p>
+        <p>Calculating the sum of first 100 natrual numbers:</p>
+        <p id="do"></p>
+    
+        <p>Creating an array using do loop:</p>
+        <p id="arr"></p>
+
+        <script>
+            var i=0,sum=0,arr=[]
+            do{
+                sum +=i;
+                arr.push(i)
+                i++;
+            }while(i<100)
+            document.getElementById('do').innerHTML=sum;
+            document.getElementById('arr').innerHTML=arr;
+
+        </script>
+    </body>
+</html>
