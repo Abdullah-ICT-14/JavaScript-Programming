@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1>JavaScript arrays:</h1>
+    <p>Creating an array: <br> One way:</p>
+    <p id="arr"></p>
+    <p>Another way:</p>
+    <p id="arr1"></p>
+
+    <p>Access the array elements: cars[0],cars[1]</p>
+    <p id="arac"></p>
+
+    <p>Change the array elements:cars[0]='Nishan'</p>
+    <p id="arc"></p>
+
+    <p>Access the last elements:cars[-1]</p>
+    <p id="last"></p>
+    <script>
+        var cars=['BMW','Toyota','Honda']
+        var arr=new Array('A','B','C','D','E')
+        document.getElementById('arr').innerHTML="var cars=['BMW','Toyota','Honda']  "+'<br>'+'Output:  ' +cars+'<br>';
+        document.getElementById('arr1').innerHTML=" var arr=new Array('A','B','C','D','E') "+'<br>'+'Output: '+arr;
+        document.getElementById('arac').innerHTML='cars[0] :'+cars[0]+'  '+'cars[1] :'+cars[1]
+        cars[0]='Nishan'
+        document.getElementById('arc').innerHTML='Cars: '+' '+ cars
+        document.getElementById('last').innerHTML='cars[-1]: '+' '+cars[-1]
+    </script>
+    </body>
+</html>
