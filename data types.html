@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <p>This is an string type data</p>
+    <p id="str"></p>
+    <p>This is an numbers type data</p>
+    <p id="num"></p>
+    <p>This is an booleans type data</p>
+    <p id="bool"></p>
+    <p>This is an array type data</p>
+    <p id="arr"></p>
+
+    <p>This is an object type data</p>
+    <p id="obj"></p>
+
+    <script>
+        var str, num, arr, obj, bool;
+        str = 'Abdullah'
+        document.getElementById('str').innerHTML = typeof (str);
+
+        num = 15;
+        document.getElementById('num').innerHTML = typeof (num);
+
+        arr = ['Abdullah','puja']
+        document.getElementById('arr').innerHTML = typeof (arr);
+
+        obj = { name: 'Abdullah', id: 'IT-17015' }
+        document.getElementById('obj').innerHTML = typeof (obj);
+
+        bool = false;
+        document.getElementById('bool').innerHTML = typeof (bool);
+
+    </script>
+</body>
+
+</html>
