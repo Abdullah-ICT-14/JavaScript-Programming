@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <p>JavaScript Dates</p>
+    <p>Creating a date using new Date() method:</p>
+    <p id='date'></p>
+
+    <p>Creating a date using the new Date(year, month, day, hours, minutes, seconds, milliseconds)</p>
+    <p id='date2'></p>
+    <script>
+        var d=new Date();
+        document.getElementById('date').innerHTML=d;
+        var e=new Date(2020,1,19,20,48,50,1);
+        document.getElementById('date2').innerHTML=e;
+    </script>
+    </body>
+</html>
